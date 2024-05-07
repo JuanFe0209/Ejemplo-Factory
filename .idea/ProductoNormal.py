@@ -1,0 +1,2 @@
+class ProductoNormal(Producto):
+    pass
