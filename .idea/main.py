@@ -1,12 +1,12 @@
-from FabricaProducto import FabricaProducto
-
+from FabricaVehiculo import FabricaVehiculos
 def main():
-    fabrica = FabricaProducto()
-    producto1 = fabrica.crear_producto("Camisa", 25)
-    producto2 = fabrica.crear_producto("zapato", 30, descuento= 10)
+    fabrica = FabricaVehiculos()
 
-    print(producto1.descripcion())
-    print(producto2.descripcion())
+    vehiculo1 = fabrica.fabricar_vehiculo("automovil", "Toyota", "Corolla")
+    vehiculo1.conducir()
 
-    if __name__ == "__main__":
-        main()
+    vehiculo2 = fabrica.fabricar_vehiculo("motocicleta", "Honda", "CBR600RR")
+    vehiculo2.conducir()
+
+if __name__ == "__main__":
+    main()
